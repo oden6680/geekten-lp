@@ -22,7 +22,7 @@ function App() {
                 <p className="py-3 is-size-5">日常の音が音階で聞こえる絶対音感を体験してみませんか？<br></br>
                 Do Remixは絶対音感を手軽に体験ができるアプリです。
                 </p>
-                <a href="https://zettai-onkan.netlify.app/" target="blank">Do Remixを試してみる</a>
+                <a href="https://do-remix.vercel.app/" target="blank">Do Remixを試してみる</a>
               </div>
               <img src={QR} alt="QRcode"></img>
             </div>
