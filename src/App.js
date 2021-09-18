@@ -1,23 +1,15 @@
 import './App.css';
 import 'bulma/css/bulma.min.css';
 
-import TITLE from './images/title-logo.png'
-import Phone from './images/Google Pixel 4 XL Clearly White.png'
+import Home from './images/home.png'
+import Post from './images/post.png'
 import QR from './images/geek-qr.png'
-import MIDI from './images/MIDI2.png'
-import CONVERT from './images/convert.png'
-import LISTEN from './images/temp-icon.png'
+import Liblary from './images/liblary.png'
+import Timeline from './images/timeline.png'
 
 function App() {
   return (
     <div>
-      <section className="hero is-primary">
-        <div className="hero-head">
-          <nav className="navbar">
-            <img src={TITLE} alt="title" width="13%"></img>
-          </nav>
-        </div>
-      </section>
 
       <section class="hero is-medium is-grey">
         <div class="hero-body">
@@ -36,42 +28,66 @@ function App() {
             </div>
             <div className="column">
               <div className="has-text-centered">
-                <img src={Phone} alt ="Phone" width="40%" height="40%"></img>
+              <img src={Home} alt="QRcode"></img>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="howtouse has-background-primary-light is-bold">
-        <p className="pt-4 title has-text-centered"><u>使い方</u></p>
-        <div className="columns">
-          <div className="column is-one-third has-text-centered">
-            <p className="title has-text-centered">STEP1</p>
-            <img src={MIDI} alt ="MIDI" width="40%" height="40%"></img>
-            <p className="pt-3 subtitle">聴きたい音のMIDIファイルを準備</p>
-            <p className="px-6 has-text-left">音階で聞いてみたい気になる音をMIDIファイルで準備しましょう。</p>
+      <section className="has-background-primary-light is-bold">
+        <p className="pt-4 title has-text-centered"><u>Do Remixの特徴</u></p>
+        <div className="columns is-vcentered">
+          <div className="column is-half has-text-centered">
+          <img src={Post} alt="postscreen"></img>
           </div>
-
-          <div className="column is-one-third has-text-centered">
-            <p className="title has-text-centered">STEP2</p>
-            <img src={CONVERT} alt="logo" width="48%" height="40%"></img>
-            <p className="pt-5 subtitle">音階に変換する</p>
-            <p className="px-6 has-text-left">用意したMIDIファイルを選択し音階に変換しましょう。</p>
-          </div>
-
-          <div className="column is-one-third has-text-centered">
-            <p className="title has-text-centered">STEP3</p>
-            <img src={LISTEN} alt="logo" width="48%" height="40%"></img>
-            <p className="pt-3 subtitle">完成した音を聞いてみる</p>
-            <p className="px-6 has-text-left">音階に変換した音を聞いてみましょう。気に入った音はwavファイルとしてその場で保存することができます。</p>
+          <div className="column has-text-centered">
+            <p className="title">特徴１</p>
+            <p className="pt-2 subtitle">絶対音感の擬似体験ができる！</p>
+            <p>選ばれた者のみが持つ能力絶対音感。<br></br>
+              MIDIファイルを用意すれば簡単に<br></br>
+              絶対音感を擬似体験することができます。
+            </p>
           </div>
         </div>
       </section>
+
+      <section>
+        <div className="columns is-vcentered">
+          <div className="column has-text-centered">
+            <p className="title">特徴2</p>
+            <p className="pt-2 subtitle">変換した音を記録可能！</p>
+            <p>自身が変換した音声の記録をするライブラリ機能<br></br>
+              いつでもアプリを開けば今までの変換した<br></br>
+              音声等をすぐに再び聞くことができます。
+            </p>
+          </div>
+          <div className="column is-half has-text-centered">
+          <img src={Liblary} alt="liblary screen"></img>
+          </div>
+        </div>
+      </section>
+
+      <section className="has-background-primary-light is-bold">
+        <div className="columns is-vcentered">
+          <div className="column is-half has-text-centered">
+          <img src={Timeline} alt="timeline screen"></img>
+          </div>
+          <div className="column has-text-centered">
+            <p className="title">特徴3</p>
+            <p className="pt-2 subtitle">MIDIファイルがなくても楽しめる！</p>
+            <p>音階で聞いてみたい音のMIDIファイルがなくても安心<br></br>
+              タイムライン機能から他のユーザーが変換した音声を聞いてみましょう<br></br>
+              もちろん自身の変換した音声を投稿することも可能です。
+            </p>
+          </div>
+        </div>
+      </section>
+
       <footer className='footer'>
           <div className='has-text-centered'>
             <hr></hr>
-            <p>&copy; 2021 teamわざそだてん <a href = "mailto:oden6680@gmail.com">oden6680@gmail.com</a> </p>
+            <p>&copy; 技育展2021 無駄開発部門 DoRemixers <a href = "mailto:oden6680@gmail.com">oden6680@gmail.com</a> </p>
           </div>
       </footer>
     </div>
